@@ -7,13 +7,13 @@ Pod::Spec.new do |s|
 This library provides you a way to handle W3C Web Authentication API (a.k.a. WebAuthN / FIDO 2.0) easily.
                    DESC
 
-  s.homepage = "https://github.com/lyokato/WebAuthnKit"
+  s.homepage = "https://github.com/Emad-Salah/WebAuthnKit-iOS"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   s.license = { :type => "MIT", :file => "LICENSE" }
 
-  s.author = { "lyokato" => "lyo.kato@gmail.com" }
+  s.author = { "emadkheir" => "emads14@gmail.com" }
   s.social_media_url = "https://twitter.com/SX_Portfolio"
 
   s.platform = :ios, "10.0"

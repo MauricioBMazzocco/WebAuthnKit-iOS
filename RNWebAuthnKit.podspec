@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "WebAuthnKit"
+  s.name         = "RNWebAuthnKit"
   s.version      = "0.9.7"
   s.summary      = "WebAuthn Client and Authenticator Support Library"
 

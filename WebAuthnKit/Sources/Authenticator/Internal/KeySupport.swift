@@ -53,7 +53,9 @@ public class ECDSAKeySupport : KeySupport {
         )
         let privateAccessControl = EllipticCurveKeyPair.AccessControl(
             protection: kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly,
-            flags:      [.privateKeyUsage]
+            flags: {
+              return EllipticCurveKeyPair.Device.hasSecureEnclave ? [.userPresence, .privateKeyUsage] : [.userPresence]
+            }()
         )
         let config = EllipticCurveKeyPair.Config(
             publicLabel:             "\(label)/public",
@@ -63,6 +65,8 @@ public class ECDSAKeySupport : KeySupport {
             privateKeyAccessControl: privateAccessControl,
             token:                   EllipticCurveKeyPair.Token.secureEnclaveIfAvailable
         )
+        
+        WAKLogger.debug("<ECDSAKeySupport> Generated a new key: \(label)/public \(label)/private")
         return EllipticCurveKeyPair.Manager(config: config)
     }
     
@@ -89,6 +93,8 @@ public class ECDSAKeySupport : KeySupport {
             
             let x = Array(publicKey[27..<59])
             let y = Array(publicKey[59..<91])
+            
+            WAKLogger.debug("Creating the COSEKeyEC2")
             
             let key: COSEKey = COSEKeyEC2(
                 alg: self.selectedAlg.rawValue,

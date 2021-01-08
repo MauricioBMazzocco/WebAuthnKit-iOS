@@ -19,7 +19,7 @@
 		90D2E9E821A424DD00032373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90D2E9E621A424DD00032373 /* LaunchScreen.storyboard */; };
 		90D2EA1921A425DC00032373 /* WebAuthnKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D2EA1021A425DC00032373 /* WebAuthnKit.framework */; };
 		90D2EA2021A425DD00032373 /* WebAuthnKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2EA1F21A425DD00032373 /* WebAuthnKitTests.swift */; };
-		90D2EA2221A425DD00032373 /* WebAuthnKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 90D2EA1221A425DC00032373 /* WebAuthnKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90D2EA2221A425DD00032373 /* RNWebAuthnKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 90D2EA1221A425DC00032373 /* RNWebAuthnKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		90D2EA2521A425DD00032373 /* WebAuthnKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D2EA1021A425DC00032373 /* WebAuthnKit.framework */; };
 		90D2EA2621A425DD00032373 /* WebAuthnKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90D2EA1021A425DC00032373 /* WebAuthnKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		90D2EA3121A4422D00032373 /* WAKTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D2EA3021A4422D00032373 /* WAKTypes.swift */; };
@@ -113,7 +113,7 @@
 		90D2E9E721A424DD00032373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90D2E9E921A424DD00032373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D2EA1021A425DC00032373 /* WebAuthnKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebAuthnKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90D2EA1221A425DC00032373 /* WebAuthnKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebAuthnKit.h; sourceTree = "<group>"; };
+		90D2EA1221A425DC00032373 /* RNWebAuthnKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNWebAuthnKit.h; sourceTree = "<group>"; };
 		90D2EA1321A425DC00032373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		90D2EA1821A425DC00032373 /* WebAuthnKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebAuthnKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D2EA1F21A425DD00032373 /* WebAuthnKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAuthnKitTests.swift; sourceTree = "<group>"; };
@@ -280,7 +280,7 @@
 		90D2EA2E21A42B8500032373 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				90D2EA1221A425DC00032373 /* WebAuthnKit.h */,
+				90D2EA1221A425DC00032373 /* RNWebAuthnKit.h */,
 				90D2EA6021A4466100032373 /* Client */,
 				90D2EA4921A4446C00032373 /* Authenticator */,
 				90D2EA3421A4429E00032373 /* Format */,
@@ -362,7 +362,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90D2EA2221A425DD00032373 /* WebAuthnKit.h in Headers */,
+				90D2EA2221A425DD00032373 /* RNWebAuthnKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

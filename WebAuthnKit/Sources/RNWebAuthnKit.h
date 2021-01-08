@@ -1,5 +1,5 @@
 //
-//  WebAuthnKit.h
+//  RNWebAuthnKit.h
 //  WebAuthnKit
 //
 //  Created by Lyo Kato on 2018/11/20.

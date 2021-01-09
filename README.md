@@ -1,8 +1,8 @@
-# WebAuthnKit (iOS)
+# RNWebAuthnKit (iOS)
 
 This library provides you a way to handle W3C Web Authentication API (a.k.a. WebAuthN / FIDO 2.0) easily.
 
-(You can also get Android version here https://github.com/lyokato/WebAuthnKit-Android)
+(You can also get Android version here https://github.com/lyokato/RNWebAuthnKit-Android)
 
 ![webauthnkit](https://user-images.githubusercontent.com/30877/48991209-58517080-f175-11e8-879c-2a7628ff5df5.png)
 
@@ -20,7 +20,7 @@ platform :ios, '10.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'WebAuthnKit', '~> 0.9.3'
+    pod 'RNWebAuthnKit', '~> 0.9.3'
 end
 ```
 
@@ -43,7 +43,7 @@ Add `Privacy - Face ID Usage Description (NSFaceIDUsageDescription)` item, and w
 At first, compose your client object like following.
 
 ```swift
-import WebAuthnKit
+import RNWebAuthnKit
 
 let userConsentUI = UserConsentUI(viewController: self)
 let authenticator = InternalAuthenticator(ui: userConsentUI)
@@ -61,7 +61,6 @@ WebAuthnClient creates a credential if it succeeded.
 
 - https://www.w3.org/TR/webauthn/#createCredential
 - https://www.w3.org/TR/webauthn/#op-make-cred
-
 
 ```swift
 var options = PublicKeyCredentialCreationOptions()
@@ -95,10 +94,9 @@ self.webAuthnClient.create(options).then { credential in
 
 Each option-parameter corresponds to JavaScript API implemented on web-browsers.
 
-
 ### Flow with PromiseKit
 
-WebAuthnKit currently adopt PromiseKit, so,
+RNWebAuthnKit currently adopt PromiseKit, so,
 whole registration process can be written like this.
 
 ```swift
@@ -170,7 +168,6 @@ self.webAuthnClient.get(options).then { assertion in
 }
 ```
 
-
 You may want to write whole assertion process like following.
 
 ```swift
@@ -229,4 +226,4 @@ MIT-LICENSE
 
 ## Author
 
-Lyo Kato <lyo.kato __at__ gmail.com>
+Lyo Kato <lyo.kato **at** gmail.com>

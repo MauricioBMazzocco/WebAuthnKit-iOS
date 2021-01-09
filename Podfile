@@ -13,7 +13,7 @@ target 'WebAuthnKitDemo' do
 
   # Pods for WebAuthnKitDemo
 
-  target 'WebAuthnKit' do
+  target 'RNWebAuthnKit' do
     inherit! :search_paths
     pod "PromiseKit", "~> 6.3.4"
     pod "EllipticCurveKeyPair", "~> 2.0-beta1"

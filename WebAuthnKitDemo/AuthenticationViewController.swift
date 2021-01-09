@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import WebAuthnKit
+import RNWebAuthnKit
 import PromiseKit
 import CryptoSwift
 

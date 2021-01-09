@@ -8,7 +8,7 @@
 
 import XCTest
 
-@testable import WebAuthnKit
+@testable import RNWebAuthnKit
 @testable import CryptoSwift
 
 class CBORTests: XCTestCase {

@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import WebAuthnKit
+@testable import RNWebAuthnKit
 
 class WebAuthnKitTests: XCTestCase {
 

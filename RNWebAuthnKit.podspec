@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RNWebAuthnKit"
-  s.version      = "0.9.8"
+  s.version      = "0.9.9"
   s.summary      = "WebAuthn Client and Authenticator Support Library"
 
   s.description  = <<-DESC
@@ -19,7 +19,7 @@ This library provides you a way to handle W3C Web Authentication API (a.k.a. Web
   s.platform = :ios, "10.0"
   s.source = { :git => "https://github.com/Emad-Salah/WebAuthnKit-iOS.git", :tag => "#{s.version}" }
 
-  s.source_files  = "WebAuthnKit/Sources/**/*.swift"
+  s.source_files  = "RNWebAuthnKit/Sources/**/*.swift"
 
   # s.resource  = "icon.png"
   # s.resources = "Resources/*.png"

@@ -16,11 +16,11 @@ This library provides you a way to handle W3C Web Authentication API (a.k.a. Web
 
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '10.0'
+platform :ios, '11.0'
 use_frameworks!
 
 target '<Your Target Name>' do
-    pod 'RNWebAuthnKit', '~> 0.9.3'
+    pod 'RNWebAuthnKit', '~> 0.9.10'
 end
 ```
 

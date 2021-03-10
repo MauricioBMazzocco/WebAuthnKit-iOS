@@ -1,6 +1,6 @@
 //
 //  KeyRegistrationViewController.swift
-//  RNWebAuthnKit
+//  WebAuthnKit
 //
 //  Created by Lyo Kato on 2018/11/22.
 //  Copyright © 2018 Lyo Kato. All rights reserved.
@@ -122,9 +122,9 @@ class KeyDetailView: UIView, UITextFieldDelegate {
         self.keyNameField.text = self.createDefaultKeyName()
         self.keyNameField.textColor = self.config.fieldTextColor;
         self.keyNameField.font = UIFont.systemFont(ofSize: 14.0, weight: .medium)
-        self.addSubview(self.keyNameField)
-        
-        offset = offset + keyNameFieldHeight + 18
+//        self.addSubview(self.keyNameField)
+
+//        offset = offset + keyNameFieldHeight + 18
         
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: keyNameFieldHeight))
         self.keyNameField.leftView = paddingView
@@ -186,29 +186,6 @@ class KeyDetailView: UIView, UITextFieldDelegate {
         self.addSubview(displayNameLabel)
         
         offset = offset + displayNameHeight + 6
-        
-        if self.config.showRPInformation {
-            
-            let rpMargin: CGFloat = 10
-            
-            let rpNameLabel = UILabel(frame: CGRect.zero)
-            
-            rpNameLabel.frame = CGRect(
-                x: rpMargin,
-                y: offset,
-                width: viewWidth - rpMargin * 2,
-                height: 20
-            )
-            
-            rpNameLabel.backgroundColor = UIColor.clear
-            rpNameLabel.text = "[ " + self.rp.name + " ]"
-            rpNameLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .medium)
-            rpNameLabel.textAlignment = .center
-            
-            self.addSubview(rpNameLabel)
-            
-            offset = offset + rpIconSize + 10
-        }
 
         let buttonMargin: CGFloat = 0
         let buttonWidth = (viewWidth - buttonMargin * 3) / 2.0
